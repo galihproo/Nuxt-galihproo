@@ -1,9 +1,9 @@
 <template>
     <b-container id="about" class="about">
-        <h2 class="text-center">About Me</h2>
+        <h2 class="text-center" data-aos="fade-up" data-aos-duration="500">About Me</h2>
         <div class="row">
             <div class="col-12 col-lg-6">
-                <div class="about-card">
+                <div class="about-card" data-aos="fade-right" data-aos-duration="1000">
                     <div class="title">Profile</div>
                     <table class="content">
                         <tr>
@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="col-12 col-lg-6">
-                <div class="about-card">
+                <div class="about-card" data-aos="fade-left" data-aos-duration="1000">
                     <div class="title">Education</div>
                     <table class="content">
                         <tr>
@@ -53,10 +53,10 @@
 <style scoped>
 
     .about {
-        margin-top: 120px;
+        padding-top: 80px;
     }
 
-        .about h2 {
+    .about h2 {
         font-size: 32px;
         font-weight: bold;
         line-height: 44px;
@@ -64,7 +64,7 @@
         margin: 0;
     }
 
-        .about .about-card {
+    .about .about-card {
         background-color: #fff3e0;
         width: 100%;
         min-height: 360px;
@@ -74,7 +74,7 @@
         margin-top: 50px;
     }
 
-        .about .about-card .title {
+    .about .about-card .title {
         background-color: #efb960;
         width: 160px;
         padding: 10px;
@@ -93,20 +93,26 @@
         border-radius: 20px;
         }
 
-        .about .about-card .content {
+    .about .about-card .content {
         border: none;
         width: 100%;
         margin-top: 40px;
     }
 
-        .about .about-card .content tr td,
-        .about .about-card .content tr a {
+    .about .about-card .content tr td,
+    .about .about-card .content tr a {
         color: #333;
         font-size: 18px;
     }
 
-        .about .about-card .content tr td {
+    .about .about-card .content tr td {
         padding: 15px 0;
+    }
+
+    @media (min-width: 992px) {
+        .about {
+            height: 100vh;
+        }
     }
 
     @media (max-width: 575px) {

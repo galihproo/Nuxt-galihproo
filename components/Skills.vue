@@ -1,28 +1,28 @@
 <template>
     <b-container class="skills">
-        <h2 class="text-center">My Skills</h2>
+        <h2 class="text-center" data-aos="fade-up" data-aos-duration="500">My Skills</h2>
         <div class="skills-row">
-            <div class="skill-item">
+            <div class="skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="0">
                 <img class="icon-skill" src="~/assets/ic-html5.svg" alt="icon-skill">
                 <img class="ic-border" src="~/assets/ic-html5-border.svg" alt="icon-skill">
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="500">
                 <img class="icon-skill" src="~/assets/ic-css3.svg" alt="icon-skill">
                 <img class="ic-border" src="~/assets/ic-css3-border.svg" alt="icon-skill">
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1000">
                 <img class="icon-skill" src="~/assets/ic-js.svg" alt="icon-skill">
                 <img class="ic-border" src="~/assets/ic-js-border.svg" alt="icon-skill">
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="1500">
                 <img class="icon-skill" src="~/assets/ic-bootstrap.svg" alt="icon-skill">
                 <img class="ic-border" src="~/assets/ic-bootstrap-border.svg" alt="icon-skill">
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="2000">
                 <img class="icon-skill" src="~/assets/ic-react.svg" alt="icon-skill">
                 <img class="ic-border" src="~/assets/ic-react-border.svg" alt="icon-skill">
             </div>
-            <div class="skill-item">
+            <div class="skill-item" data-aos="fade-up" data-aos-duration="500" data-aos-delay="2500">
                 <img class="icon-skill" src="~/assets/ic-webflow.svg" alt="icon-skill">
                 <img class="ic-border" src="~/assets/ic-webflow-border.svg" alt="icon-skill">
             </div>
@@ -124,13 +124,11 @@
         .skills .skills-row {
             padding: 0 20px;
             -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         .skills .skills-row .skill-item {
             margin: 15px 10px;
-        }
-        .skills .skills-row .skill-item:last-child {
-            margin: 15px auto;
         }
     }
 </style>

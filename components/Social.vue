@@ -1,23 +1,23 @@
 <template>
     <b-container id="socials" class="social">
-        <h2 class="text-center">You Can Find Me at</h2>
+        <h2 class="text-center" data-aos="fade-up" data-aos-duration="500">You Can Find Me at</h2>
         <div class="social-media-row">
-            <div class="social-link">
+            <div class="social-link" data-aos="zoom-in" data-aos-duration="500">
                 <a href="https://web.facebook.com/galih.p.33865?_rdc=1&_rdr" target="_blank">
                     <img src="~/assets/ic-facebook.svg" alt="social-icons">
                 </a>
             </div>
-            <div class="social-link">
+            <div class="social-link" data-aos="zoom-in" data-aos-duration="500">
                 <a href="https://www.instagram.com/_galihprihananto/" target="_blank">
                     <img src="~/assets/ic-instagram.svg" alt="social-icons">
                 </a>
             </div>
-            <div class="social-link">
+            <div class="social-link" data-aos="zoom-in" data-aos-duration="500">
                 <a href="https://www.linkedin.com/in/galih-prihananto/" target="_blank">
                     <img src="~/assets/ic-linkedin.svg" alt="social-icons">
                 </a>
             </div>
-            <div class="social-link">
+            <div class="social-link" data-aos="zoom-in" data-aos-duration="500">
                 <a href="https://dribbble.com/Galihpro_" target="_blank">
                     <img src="~/assets/ic-dribbble.svg" alt="social-icons">
                 </a>
@@ -29,7 +29,8 @@
 
 <style scoped>
     .social {
-        margin-top: 100px;
+        padding-top: 80px;
+        height: 100%;
     }
 
     .social h2 {
@@ -84,6 +85,12 @@
     .social .social-media-row .social-link:hover img {
         -webkit-filter: invert(97%) sepia(100%) saturate(0%) hue-rotate(69deg) brightness(104%) contrast(104%);
                 filter: invert(97%) sepia(100%) saturate(0%) hue-rotate(69deg) brightness(104%) contrast(104%);
+    }
+
+    @media (min-width: 992px) {
+        .social {
+            padding-top: 160px;
+        }
     }
 
     @media (max-width: 767px) {

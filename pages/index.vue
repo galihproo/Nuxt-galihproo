@@ -1,10 +1,8 @@
 <template>
   <div>
+    <Navbar />
     <Header />
     <Skills />
-    <About />
-    <Portfolio />
-    <Social />
     <Footer />
   </div>
 </template>

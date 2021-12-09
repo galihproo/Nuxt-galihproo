@@ -1,22 +1,22 @@
 <template>
     <b-container id="portfolio" class="portfolio">
-        <h2 class="text-center">My Recent Portfolio</h2>
+        <h2 class="text-center" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">My Recent Portfolio</h2>
         <div class="row portfolio-row">
-            <b-col cols="12" sm="6" lg="4" class="card-portfolio">
+            <b-col cols="12" sm="6" lg="4" class="card-portfolio" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
                 <a href="https://semarvest.vercel.app/" target="_blank">
                     <div class="portfolio-content">
                         <img src="~/assets/portfolio3-img.png" alt="portfolio-image">
                     </div>
                 </a>
             </b-col>
-            <b-col cols="12" sm="6" lg="4" class="card-portfolio">
+            <b-col cols="12" sm="6" lg="4" class="card-portfolio" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
                 <a href="https://galihproo.github.io/CourseIn-Online-Course-Website/" target="_blank">
                     <div class="portfolio-content">
                         <img src="~/assets/portfolio2-img.png" alt="portfolio-image">
                     </div>
                 </a>
             </b-col>
-            <b-col cols="12" sm="6" lg="4" class="card-portfolio">
+            <b-col cols="12" sm="6" lg="4" class="card-portfolio" data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="bottom-bottom">
                 <a href="https://galihproo.github.io/TravellinKuy-Website/" target="_blank">
                     <div class="portfolio-content">
                         <img src="~/assets/portfolio-img.png" alt="portfolio-image">
@@ -29,7 +29,7 @@
 
 <style scoped>
     .portfolio {
-        margin-top: 100px;
+        padding-top: 80px;
     }
 
     .portfolio h2 {
@@ -55,6 +55,12 @@
         height: 100%;
         border-radius: 100px 20px;
         object-fit: cover;
+    }
+
+    @media (min-width: 992px) {
+        .portfolio {
+            height: 100vh;
+        }
     }
 
     @media (max-width: 991px) {
